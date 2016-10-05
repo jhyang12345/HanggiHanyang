@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:background="#fbfbfb"
+        android:paddingBottom="0dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/actionBar"
+            android:background="#053484"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:elevation="4dp"
+            android:translationZ="4dp"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/iconhy"
+                android:id="@+id/appicon"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#FFF"
+                android:id="@+id/actionBarTitle"
+                android:layout_marginLeft="45dp"
+                android:text="@string/app_name"/>
+
+            <ImageView
+                android:id="@+id/openoptions"
+                android:src="@drawable/down"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@id/actionBar"
+
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/meallist">
+
+
+
+        </ListView>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

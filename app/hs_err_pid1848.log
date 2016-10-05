@@ -1,0 +1,129 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 262144 bytes for object start array expansion
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (objectStartArray.cpp:102), pid=1848, tid=11460
+#
+# JRE version:  (8.0_05-b13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.5-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000342d800):  JavaThread "Unknown thread" [_thread_in_vm, id=11460, stack(0x00000000016f0000,0x00000000017f0000)]
+
+Stack: [0x00000000016f0000,0x00000000017f0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x308dea]
+V  [jvm.dll+0x25def1]
+V  [jvm.dll+0x25eb0f]
+V  [jvm.dll+0x27e924]
+C  [KERNELBASE.dll+0x55fa7]
+C  [ntdll.dll+0xada9b]
+C  [ntdll.dll+0x95946]
+C  [ntdll.dll+0xa991d]
+C  [ntdll.dll+0x486d3]
+C  [ntdll.dll+0xa8a3a]
+V  [jvm.dll+0x1fdd91]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000342d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=11460, stack(0x00000000016f0000,0x00000000017f0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6765b0000 - 0x00007ff6765e4000 	C:\Program Files\Java\jdk1.8.0_05\bin\java.exe
+0x00007ffb38e00000 - 0x00007ffb38fd1000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffb365d0000 - 0x00007ffb3667b000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffb35640000 - 0x00007ffb3585d000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffb38d50000 - 0x00007ffb38df2000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffb36680000 - 0x00007ffb3671e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffb36b60000 - 0x00007ffb36bb9000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffb36da0000 - 0x00007ffb36ec1000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffb369f0000 - 0x00007ffb36b55000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffb35fa0000 - 0x00007ffb35fbe000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffb36cf0000 - 0x00007ffb36d24000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffb35fc0000 - 0x00007ffb36142000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffb2e020000 - 0x00007ffb2e299000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.14393.0_none_2d0f50fcbdb171b8\COMCTL32.dll
+0x00007ffb36720000 - 0x00007ffb369e7000 	C:\WINDOWS\System32\combase.dll
+0x00007ffb353e0000 - 0x00007ffb354d5000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffb36320000 - 0x00007ffb3638a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffb38820000 - 0x00007ffb3884e000 	C:\WINDOWS\System32\IMM32.DLL
+0x0000000054750000 - 0x0000000054822000 	C:\Program Files\Java\jdk1.8.0_05\jre\bin\msvcr100.dll
+0x0000000054bd0000 - 0x00000000553fa000 	C:\Program Files\Java\jdk1.8.0_05\jre\bin\server\jvm.dll
+0x00007ffb36ed0000 - 0x00007ffb36ed8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffb32b30000 - 0x00007ffb32b39000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffb36d30000 - 0x00007ffb36d9a000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffb33240000 - 0x00007ffb33263000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffb331e0000 - 0x00007ffb3320b000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffb35390000 - 0x00007ffb353d2000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x0000000054bc0000 - 0x0000000054bcf000 	C:\Program Files\Java\jdk1.8.0_05\jre\bin\verify.dll
+0x0000000054b90000 - 0x0000000054bb8000 	C:\Program Files\Java\jdk1.8.0_05\jre\bin\java.dll
+0x0000000054b70000 - 0x0000000054b86000 	C:\Program Files\Java\jdk1.8.0_05\jre\bin\zip.dll
+0x00007ffb2a7b0000 - 0x00007ffb2a942000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Xmx1024M -Dfile.encoding=x-windows-949 -Duser.country=KR -Duser.language=ko -Duser.variant 
+java_command: com.android.dx.command.Main --dex --output C:\Users\user\AndroidStudioProjects\Hanyang\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0_e2afecd64a93c6da561af41c06a0786ce8af9278.jar C:\Users\user\AndroidStudioProjects\Hanyang\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar
+java_class_path (initial): F:\sdk\build-tools\21.1.2\lib\dx.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_05
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Python34;C:\Python34\Scripts;C:\Users\user\Anaconda3;C:\Users\user\Anaconda3\Scripts;C:\Users\user\Anaconda3\Library\bin;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Users\user\Downloads\shell.w32-ix86;C:\Users\user\AppData\Local\atom\bin;C:\MinGW\bin;C:\Program Files\MongoDB\Server\3.2\bin;USERPROFILE\AppData\Local\Microsoft\WindowsApps;
+USERNAME=user
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, tsc, tscinvbit
+
+Memory: 4k page, physical 8342076k(2027392k free), swap 8342076k(164996k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.5-b02) for windows-amd64 JRE (1.8.0_05-b13), built on Mar 18 2014 01:08:39 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Oct 05 02:30:36 2016
+elapsed time: 0 seconds
+

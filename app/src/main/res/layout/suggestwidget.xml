@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/customshape"
+    android:id="@+id/suggestlayout"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="한끼한양은 편리한 위젯 기능이 있습니다. 안드로이드의 위젯 추가 기능을 통해 추가 가능합니다."
+        android:textSize="22dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+
+        android:src="@drawable/preview"
+        />
+
+
+
+
+</LinearLayout>
