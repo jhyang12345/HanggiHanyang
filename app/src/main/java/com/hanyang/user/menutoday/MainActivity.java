@@ -137,7 +137,7 @@ public class MainActivity extends ActionBarActivity {//{//AppCompatActivity {
 
         System.out.println("Saved time: " + mils + " " + curtime);
         System.out.println("Minutes: " + minutes);
-        if (currentItems.equals("[]") || minutes > 360) {
+        if (currentItems.equals("[]") || minutes > 480) {
             new RetrieveURL().execute();
         } else {
             System.out.println("LOADING FROM JSON FILE!!!");

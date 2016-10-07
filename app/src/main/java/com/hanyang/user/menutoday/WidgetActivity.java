@@ -746,7 +746,7 @@ public class WidgetActivity extends AppWidgetProvider {
             long minutes = TimeUnit.MILLISECONDS.toMinutes(curtime - mils);
             System.out.println("Saved time: " + mils + " " + curtime);
             System.out.println("Minutes: " + minutes);
-            if(minutes > 360 || manualUpdate) {
+            if(minutes > 480 || manualUpdate) {
                 manualUpdate = false;
                 try {
 
@@ -763,6 +763,7 @@ public class WidgetActivity extends AppWidgetProvider {
                     retvalue = cafeterias.html();
 
                 } catch (IOException e) {
+                    doc = Jsoup.parse("");
 
                     cafeterias = doc.select(".tab-7 > li");
 
