@@ -1005,7 +1005,7 @@ public class WidgetActivity extends AppWidgetProvider {
             for(int index = 0; index < indexlist.size(); index++) {
                 //for(int i = 0; i < meals.length; i++) {
                 int i = indexlist.get(index);
-                RemoteViews textView = mealholder.get(index);//new RemoteViews(context.getPackageName(), R.layout.widgetheader);
+                RemoteViews textView = mealholder.get(index);
                 if(meals[i].name.equals("공통찬")) continue;
 
                 this.views.setTextViewText(mealresource.get(textView), meals[i].name);
@@ -1017,8 +1017,6 @@ public class WidgetActivity extends AppWidgetProvider {
 
                 float scale = context.getResources().getDisplayMetrics().density;
                 int dpAsPixels = (int) (4 * scale + 0.5f);
-
-                textView.setViewPadding(R.id.headermeal, 0, dpAsPixels, 0, dpAsPixels);
 
 
                 if(loadMeal) {
