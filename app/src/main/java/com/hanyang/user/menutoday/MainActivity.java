@@ -401,13 +401,16 @@ public class MainActivity extends ActionBarActivity {//{//AppCompatActivity {
     }
 
     private void GetMenus(Elements elements) {
+        meals = new Meal[elements.size()];
+        dishes = new String[elements.size()];
+        prices = new int[elements.size()];
+
         if(elements.size() == 0) {
+
+
             open = false;
             return;
         } else {
-            meals = new Meal[elements.size()];
-            dishes = new String[elements.size()];
-            prices = new int[elements.size()];
 
             for(int i = 0; i < elements.size(); ++i) {
                 ArrayList<String> dishes = new ArrayList<String>();
