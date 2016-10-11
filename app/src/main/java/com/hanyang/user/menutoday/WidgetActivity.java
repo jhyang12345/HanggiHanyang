@@ -813,6 +813,10 @@ public class WidgetActivity extends AppWidgetProvider {
 
                     }
 
+                    if(cafeterialist.isEmpty()) {
+                        return null;
+                    }
+
                     Gson gson = new Gson();
 
                     String prettyJson = gson.toJson(cafeterialist);
@@ -840,7 +844,6 @@ public class WidgetActivity extends AppWidgetProvider {
 
             loadFromJson();
 
-
             System.out.println("LoadMeal in PostExecute: " + loadMeal);
 
             //System.out.println("Current menu status: " + menus.html());
@@ -858,7 +861,6 @@ public class WidgetActivity extends AppWidgetProvider {
                 cafeterialistopen = true;
 
                 manager.updateAppWidget(thisWidget, views);
-
 
             }
 
@@ -962,7 +964,7 @@ public class WidgetActivity extends AppWidgetProvider {
 
             }
 
-            String lastchoice = pref.getString("cafeterianame", cafeterialist.get(0));
+            String lastchoice = pref.getString("cafeterianame", "학생식당");
             if(cafeterialist.isEmpty()) {
 
                 System.out.println("Last Choice found!! " + lastchoice);
