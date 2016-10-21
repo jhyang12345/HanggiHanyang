@@ -152,11 +152,14 @@ public class MealAdapter extends ArrayAdapter<Meal> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        String name = getItem(position).name;
+
 
         ViewHolderItem viewholder;
 
+
         if (convertView == null) {
+
+            String name = getItem(position).name;
 
             AssetManager am = getContext().getAssets();
 
@@ -168,6 +171,7 @@ public class MealAdapter extends ArrayAdapter<Meal> {
             viewholder = new ViewHolderItem();
             viewholder.cafeteriaName = (TextView) convertView.findViewById(R.id.mealName);
             viewholder.listview = (LinearLayout) convertView.findViewById(R.id.dishList);
+
 
 //            ArrayList<dishprice> dishlist = new ArrayList<dishprice>();
 

@@ -547,7 +547,7 @@ public class MainActivity extends ActionBarActivity {//{//AppCompatActivity {
             try {
                 doc = Jsoup.connect(originallink).get();
 
-                cafeterias = doc.select(".tab-7 > li");
+                cafeterias = doc.select(".nav-tabs > li");
                 //   GetCafeterias(cafeterias);
 
                 menus = doc.select(".in-box");
@@ -558,7 +558,7 @@ public class MainActivity extends ActionBarActivity {//{//AppCompatActivity {
             } catch (IOException e) {
                 doc = Jsoup.parse("");
 
-                cafeterias = doc.select(".tab-7 > li");
+                cafeterias = doc.select(".nav-tabs > li");
 
                 menus = doc.select(".in-box");
 

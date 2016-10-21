@@ -754,7 +754,7 @@ public class WidgetActivity extends AppWidgetProvider {
 
                     doc = Jsoup.connect(originallink).get();
 
-                    cafeterias = doc.select(".tab-7 > li");
+                    cafeterias = doc.select(".nav-tabs > li");
 
                     menus = doc.select(".in-box");
 
@@ -765,7 +765,7 @@ public class WidgetActivity extends AppWidgetProvider {
                 } catch (IOException e) {
                     doc = Jsoup.parse("");
 
-                    cafeterias = doc.select(".tab-7 > li");
+                    cafeterias = doc.select(".nav-tabs > li");
 
                     menus = doc.select(".in-box");
 
